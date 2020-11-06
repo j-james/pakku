@@ -119,6 +119,7 @@ src/pakku: src/main.nim $(shell find src -name \*.nim)
 	@echo "NIM: $@"
 	@nim c ${NIM_OPTIONS} \
 	--nimcache:"${NIM_CACHE_DIR}/main" \
+	-d:nimWorkaround14447 \
 	-o:"$@" "$<"
 
 clean:
