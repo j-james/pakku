@@ -1,0 +1,9 @@
+nimcache
+completion/bash
+completion/zsh
+lib/tools
+src/pakku
+doc/pakku.8
+doc/pakku.8.in
+doc/pakku.conf.5
+doc/pakku.conf.5.in
