@@ -42,7 +42,7 @@ proc createCloneProgress(config: Config, count: int, flexible: bool, printMode: 
   (proc (update: int, terminate: int) {.closure.}, proc {.closure.}) =
   if count >= 1 and not printMode:
     let (update, terminate) = printProgressShare(config.common.progressBar,
-      tr"cloning repositories")
+      config.common.chomp, tr"cloning repositories")
     update(0, count)
 
     if flexible:
